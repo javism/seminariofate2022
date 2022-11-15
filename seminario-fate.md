@@ -1,8 +1,8 @@
 ---
 #theme: gaia
 #_class: lead
-paginate: true
 marp: true
+paginate: true
 #size: 4:3
 ---
 
@@ -10,6 +10,14 @@ marp: true
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
+}
+</style>
+
+<style>
+blockquote {
+    border-top: 0.1em dashed #555;
+    font-size: 60%;
+    margin-top: auto;
 }
 </style>
 
@@ -24,10 +32,17 @@ Javier Sánchez Monedero (Universidad de Córdoba)
 ![bg right fit](pics/Superior_Gort_Judge.jpg)
 
 # Objetivos
-- Introducción a FATE
-- Auditando a un algoritmo
-- [FairLearn](https://fairlearn.org/)
+## Parte I
+- Introducción y motivación a FATE en IA
+- Cuantificando y mitigando sesgos. [FairLearn](https://fairlearn.org/)
+## Parte II
+- Auditando a un algoritmo interdisciplinarmente.
 
+
+---
+<!-- _backgroundColor: "#123" -->
+<!-- _color: "#fff" -->
+##### <!--fit--> Introducción y motivación a FATE
 --- 
 
 # ¿Por dónde empezar? Libros
@@ -36,10 +51,12 @@ Javier Sánchez Monedero (Universidad de Córdoba)
 
 --- 
 
-# ¿Por dónde empezar? Películas
+# ¿Por dónde empezar? En vídeo
 
 ![bg right fit](pics/coded_bias.jpg)
 
+- Documental [Coded Bias](https://www.codedbias.com/)
+- TED Talk de Joy Buolamwini [How I'm fighting bias in algorithms](https://www.ted.com/talks/joy_buolamwini_how_i_m_fighting_bias_in_algorithms)
 
 ---
 # FATE:
@@ -57,33 +74,103 @@ Javier Sánchez Monedero (Universidad de Córdoba)
 ---
 # Objetivo del seminario
 
-Discriminación en sistemas que toman decisiones trascendentales
-- Esto excluye otras formas de discriminación o injusticia
+Discriminación en **sistemas/modelos** que toman decisiones trascendentales
+- Esto no considera otras formas de discriminación o injusticia
+- Las cuestiones de discriminación/igualdad necesitan de otro tipo de intervenciones no técnicas (ver libros recomendados)
 
 **La discriminación no es un concepto general**, depende: 
 - Dominio del problema
 - Grupo social
 
----
-# Fuentes de sesgo
-
-![h:18em center](pics/how_unfairness_happen.jpg)
-Fuente Luke Vilain.
-
+La presentación de [Judging the algorithm](https://arxiv.org/abs/2203.03723) dará una visión más interdisciplinar de este prolema. 
 
 ---
-# Casos: procesamiento lenguaje natural
+# Grupos protegidos
+
+Clases protegidas (no en todos los contextos): 
+- EEUU: “raza”, color, sexo, religión, ciudadanía, embarazo...
+- España: género, ley igualdad de trato, embarazo, ley igualdad de trato “raza”, embarazo...
+
+Con el "pero" de lo difícil de expresar la pertenencia a grupo, es interesante [intersectionalityscore.com](https://intersectionalityscore.com/)
+
+![bg right fit](pics/intersectionalityscore.png)
+
+---
+# Ley integral igualdad de trato y no discriminación
+
+[Artículo 23 Ley 15/2022, de 12 de julio](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-11589): 
+
+![](pics/articulo23.png)
 
 
+---
+# Las personas también tienen sesgos
+
+
+![w:12em](pics/futurama-judge-person.jpg) ![w:12em](pics/futurama-judge-robot.jpg)
+
+Diferencias (O'Neil 2016): 
+* Sistematización
+* Escala
+* Nuevos grupos "digitales" discriminados
+
+> O’Neil, C (2018). [Armas de destrucción matemática](https://capitanswing.com/libros/armas-de-destruccion-matematica/)
+
+
+---
+# Ejemplos de sesgo algorítmico (quitar)
+
+* Penitenciario: "Predicción" riesgo de reincidencia: el sistema sobreestima el riesgo para afroamericanos en comparación con población blanca
+* Procesamiento lenguaje natural: el sistema reproduce estereotipos de género asociados a profesiones
+* Medicina: el modelo subestima el riesgo de mujeres de morir en lista de espera
+
+
+---
+# Casos: PNL + Visión Artificial
+
+![h:20em center](pics/cv-gender-bias-4.png)
+
+> Zhao, J. et. al (2017). [Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints.](https://www.aclweb.org/anthology/D17-1319) 
 
 ---
 # Casos: reconocimiento facial
 
+Análisis interseccional del rendimiento en reconocimiento facial de Amazon Rekognition. La menor tasa de acierto se da para las mujeres de piel oscura. 
 
+![](pics/amazon-recoknition.png)
+
+> Fuente Buolamwini (2019). [Response: Racial and Gender bias in Amazon Rekognition — Commercial AI System for Analyzing Faces.](https://medium.com/@Joy.Buolamwini/response-racial-and-gender-bias-in-amazon-rekognition-commercial-ai-system-for-analyzing-faces-a289222eeced)
 
 
 ---
 # Casos: biomedicina
+
+![w:900px center](pics/sex-based-disparity-in-liver.svg)
+
+> Verna, E. C., & Lai, J. C. (2020). Time for Action to Address the Persistent Sex-Based Disparity in Liver Transplant Access. JAMA Surgery, 155(7), 545–547.https://doi.org10.1001/jamasurg.2020.1126
+
+
+---
+<!-- _backgroundColor: "#123" -->
+<!-- _color: "#fff" -->
+##### <!--fit--> Cuantificando y mitigando sesgos
+
+---
+# ¿Cómo medir y mitigar el sesgo?
+
+Ecuanimidad sin hacer nada (*unawareness*)
+
+
+
+---
+# Caso: Estimación de fallo hepático
+
+
+---
+# Recap: Fuentes de sesgo
+
+![h:18em center](pics/how_unfairness_happen.jpg)
+Fuente Luke Vilain.
 
 
 
@@ -92,3 +179,9 @@ Fuente Luke Vilain.
 
 Taxonomía simplificada fairness metrics: 
 https://textbook.coleridgeinitiative.org/chap-bias.html#dealing-with-bias 
+
+
+---
+<!-- _backgroundColor: "#123" -->
+<!-- _color: "#fff" -->
+##### <!--fit--> Auditando a un algoritmo interdisciplinarmente
