@@ -91,9 +91,10 @@ Clases protegidas (no en todos los contextos):
 - EEUU: “raza”, color, sexo, religión, ciudadanía, embarazo...
 - España: género, ley igualdad de trato, embarazo, ley igualdad de trato “raza”, embarazo...
 
+<!--
 Con el "pero" de lo difícil de expresar la pertenencia a grupo, es interesante [intersectionalityscore.com](https://intersectionalityscore.com/)
 
-![bg right fit](pics/intersectionalityscore.png)
+![bg right fit](pics/intersectionalityscore.png)-->
 
 ---
 # Ley integral igualdad de trato y no discriminación
@@ -106,7 +107,6 @@ Con el "pero" de lo difícil de expresar la pertenencia a grupo, es interesante 
 ---
 # Las personas también tienen sesgos
 
-
 ![w:12em](pics/futurama-judge-person.jpg) ![w:12em](pics/futurama-judge-robot.jpg)
 
 Diferencias (O'Neil 2016): 
@@ -115,15 +115,6 @@ Diferencias (O'Neil 2016):
 * Nuevos grupos "digitales" discriminados
 
 > O’Neil, C (2018). [Armas de destrucción matemática](https://capitanswing.com/libros/armas-de-destruccion-matematica/)
-
-
----
-# Ejemplos de sesgo algorítmico (quitar)
-
-* Penitenciario: "Predicción" riesgo de reincidencia: el sistema sobreestima el riesgo para afroamericanos en comparación con población blanca
-* Procesamiento lenguaje natural: el sistema reproduce estereotipos de género asociados a profesiones
-* Medicina: el modelo subestima el riesgo de mujeres de morir en lista de espera
-
 
 ---
 # Casos: PNL + Visión Artificial
@@ -151,6 +142,32 @@ Análisis interseccional del rendimiento en reconocimiento facial de Amazon Reko
 
 
 ---
+<!-- _backgroundColor: "darkgreen" -->
+<!-- _color: "cornsilk" -->
+# ¿Cómo cuantificarías el sesgo en los problemas anteriores?
+
+![bg right:33% 50%](pics/questionmark.svg)
+
+<!-- Penitenciario: "Predicción" riesgo de reincidencia: el sistema sobreestima el riesgo para afroamericanos en comparación con población blanca-->
+* **Reconocimiento facial**: el modelo tiene menos precisión identificando mujeres con piel oscura
+* **Medicina**: el modelo subestima el riesgo de mujeres de morir en lista de espera
+* **Procesamiento lenguaje natural**: el sistema reproduce estereotipos de género asociados a profesiones
+
+  
+---
+# Inventarios de casos
+
+![bg left fit](pics/automatingsociety-2020-comic.jpg)
+
+![w:350px](pics/aw-logo.svg)
+
+[Automating Society Report 2020](https://automatingsociety.algorithmwatch.org/report2020/spain)
+
+![](pics/logo-oasi-trans-2.png)
+
+[Observatory of Algorithms with Social Impact](https://eticasfoundation.org/oasi)
+
+---
 <!-- _backgroundColor: "#123" -->
 <!-- _color: "#fff" -->
 ##### <!--fit--> Cuantificando y mitigando sesgos
@@ -159,6 +176,10 @@ Análisis interseccional del rendimiento en reconocimiento facial de Amazon Reko
 # ¿Cómo medir y mitigar el sesgo?
 
 Ecuanimidad sin hacer nada (*unawareness*)
+
+
+
+
 
 
 
