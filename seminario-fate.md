@@ -144,7 +144,7 @@ Análisis interseccional del rendimiento en reconocimiento facial de Amazon Reko
 ---
 <!-- _backgroundColor: "darkgreen" -->
 <!-- _color: "cornsilk" -->
-# ¿Cómo cuantificarías el sesgo en los problemas anteriores?
+# A1. ¿Cómo cuantificarías el sesgo en los problemas anteriores?
 
 ![bg right:33% 50%](pics/questionmark.svg)
 
@@ -166,6 +166,13 @@ Análisis interseccional del rendimiento en reconocimiento facial de Amazon Reko
 ![](pics/logo-oasi-trans-2.png)
 
 [Observatory of Algorithms with Social Impact](https://eticasfoundation.org/oasi)
+
+---
+<!-- _backgroundColor: "darkgreen" -->
+<!-- _color: "cornsilk" -->
+# A2. Accede al informe de Algorithm Watch para ver si conoces estos sistemas. Igualmente entra en OASI y elige "Spain" para descubrir sistemas en uso.
+
+
 
 ---
 <!-- _backgroundColor: "#123" -->
