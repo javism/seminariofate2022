@@ -175,7 +175,12 @@ Análisis interseccional del rendimiento en reconocimiento facial de Amazon Reko
 ---
 # ¿Cómo medir y mitigar el sesgo?
 
-Ecuanimidad sin hacer nada (*unawareness*)
+~~Ecuanimidad sin hacer nada (*unawareness*)~~
+
+![center](pics/lol-fairness.svg)
+
+Actualizada del [NIPS 2017 Tutorial on Fairness in Machine Learning](https://fairmlbook.org/tutorial1.html)
+
 
 
 
@@ -191,7 +196,8 @@ Ecuanimidad sin hacer nada (*unawareness*)
 # Recap: Fuentes de sesgo
 
 ![h:18em center](pics/how_unfairness_happen.jpg)
-Fuente Luke Vilain.
+
+> Fuente Luke Vilain.
 
 
 
@@ -206,3 +212,13 @@ https://textbook.coleridgeinitiative.org/chap-bias.html#dealing-with-bias
 <!-- _backgroundColor: "#123" -->
 <!-- _color: "#fff" -->
 ##### <!--fit--> Auditando a un algoritmo interdisciplinarmente
+
+---
+
+A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case study on the risk assessment tool for gender-based violence implemented in the Basque country. https://arxiv.org/abs/2203.03723
+
+---
+# Referencias
+
+- Solon Barocas and Moritz Hardt and Arvind Narayanan (2019). *Fairness and Machine Learning: Limitations and Opportunities*. http://www.fairmlbook.org
+- Moritz Hardt (2020). *Fairness and Machine Learning* ([Part 1](https://www.youtube.com/watch?v=Igq_S_7IfOU), [Part 2](https://www.youtube.com/watch?v=9oNVFQ9llPc)) (MLSS 2020)
