@@ -242,6 +242,7 @@ Un ejemplo excelente lo podeis ver en Straw, I., & Wu, H. (2022).
 
 * Ya tenemos una medida del sesgo estadístico
 * ¿Cómo podríamos mitigar?
+* Pero antes: **¿tiene sentido una intervención estadística/algorítmica?**
 
 ---
 # Técnicas de mitigación de sesgos
@@ -327,8 +328,10 @@ A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case 
 * No solo FATE: IA robusta, privacidad en IA (aprendizaje federado, cifrado homeomórfico...), interacción persona-máquina (HCI)...
 * Áreas implicadas según contexto: ética, derecho, política...
 * Regulaciones (IA Act, GDPR, Ley Rider, AESIA...) y estándares (IEEE,ISO)
+* Oportunidades de aprendizaje y comprender mejor los problemas y los conceptos de estadística.
 * **¡¡Sistemas sociotécnicos!!**
 
+<!-- 
 ---
 # Oportunidades de aprendizaje e investigación
 
@@ -337,17 +340,19 @@ A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case 
 * Trabajar con equipos interdisciplinares y diversos
 * Trabajar con colectivos
   
-
+-->
 ---
 # Trabajos relacionados de AYRNA
 
 ## Explorar límites de precisión vs ecuanimidad
 
-Valdivia, A., Sánchez‐Monedero, J., & Casillas, J. (2021). How fair can we go in machine learning? Assessing the boundaries of accuracy and fairness. *International Journal of Intelligent Systems*, 36(4), 1619–1643. https://doi.org/10.1002/int.22354
+![bg right:29% fit](pics/pareto_frontier_propublica.png)
+
+Valdivia, A., Sánchez‐Monedero, J., & Casillas, J. (2021). How fair can we go in machine learning? Assessing the boundaries of accuracy and fairness. *Int J Intel Sys*, 36(4), 1619–1643. https://doi.org/10.1002/int.22354
 
 
-## Índice GEMA como alternativa al MELD/MELD-na
-M. Rodriguez-Perálvarez et. al (2022), Development and validation of the Gender-Equity Model for liver Allocation (GEMA) to prioritize liver transplant candidates: a cohort study. *Acceptado*. http://gema-transplant.com
+## Índice alternativo al MELD/MELD-na
+El grupo AYRNA en colaboración con el IMIBIC y otros centros trabaja en alternativas al MELD que no discriminen por género como estimador de riesgo de mortalidad en trasplantes hepáticos. 
 
 ---
 # Trabajos en la UCO
@@ -361,8 +366,37 @@ Guía práctica y herramienta sobre la obligación empresarial de información s
 Proyecto AlgoRace. Investigación sobre discriminación racial e inteligencia artificial. 2021-2023. https://algorace.org/
 
 ---
-# Referencias
+# Referencias (I)
+<style scoped>
+{
+  font-size: 1.5em
+}
+</style>
+- O’Neil, C (2018). Armas de destrucción matemática. Capitán Swing. https://capitanswing.com/libros/armas-de-destruccion-matematica/
 
-(Lista Incompleta)
+- Catherine D'Ignazio and Lauren F. Klein (2020). Data Feminism. MIT Press. https://mitpress.mit.edu/9780262044004/
+
 - Solon Barocas and Moritz Hardt and Arvind Narayanan (2019). *Fairness and Machine Learning: Limitations and Opportunities*. http://www.fairmlbook.org
+
 - Moritz Hardt (2020). *Fairness and Machine Learning* ([Part 1](https://www.youtube.com/watch?v=Igq_S_7IfOU), [Part 2](https://www.youtube.com/watch?v=9oNVFQ9llPc)) (MLSS 2020)
+
+- Zhao, J. et. al (2017). Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints. https://www.aclweb.org/anthology/D17-1319
+
+- Buolamwini (2019). [Response: Racial and Gender bias in Amazon Rekognition — Commercial AI System for Analyzing Faces.](https://medium.com/@Joy.Buolamwini/response-racial-and-gender-bias-in-amazon-rekognition-commercial-ai-system-for-analyzing-faces-a289222eeced)
+  
+---
+# Referencias (II)
+<style scoped>
+{
+  font-size: 1.5em
+}
+</style>
+
+- Verna, E. C., & Lai, J. C. (2020). Time for Action to Address the Persistent Sex-Based Disparity in Liver Transplant Access. JAMA Surgery, 155(7), 545–547.https://doi.org10.1001/jamasurg.2020.1126
+
+- Straw, I., & Wu, H. (2022). Investigating for bias in healthcare algorithms: A sex-stratified analysis of supervised machine learning models in liver disease prediction. BMJ Health & Care Informatics, 29(1), e100457. https://doi.org/10.1136/bmjhci-2021-100457
+
+- Castelnovo, A., Crupi, R., Greco, G. et al. A clarification of the nuances in the fairness metrics landscape. Sci Rep 12, 4209 (2022). https://doi.org/10.1038/s41598-022-07939-1
+
+- Ntoutsi, E., Fafalios, P., Gadiraju, U., Iosifidis, V., Nejdl, W., Vidal, M.-E., … Staab, S. (2020). Bias in data-driven artificial intelligence systems—An introductory survey. WIREs Data Mining and Knowledge Discovery, 10(3), e1356. https://doi.org/10.1002/widm.1356
+
