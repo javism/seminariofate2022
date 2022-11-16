@@ -47,8 +47,15 @@ Javier Sánchez Monedero (Universidad de Córdoba)
 
 # ¿Por dónde empezar? Libros
 
-![h:12em ](pics/armas-destruccion-matematica.jpg) ![h:12em ](pics/AutomatingInequality.jpg) ![h:12em ](pics/book-design-justice.jpg) ![h:12em ](pics/fairmlbook.png)
+![h:13em ](pics/armas-destruccion-matematica.jpg) ![h:13em ](pics/book-data-feminism.jpg) ![h:13em ](pics/fairmlbook.png)
 
+<!--
+--- 
+
+# ¿Por dónde empezar? Libros
+
+![h:12em ](pics/armas-destruccion-matematica.jpg) ![h:12em ](pics/AutomatingInequality.jpg) ![h:12em ](pics/book-design-justice.jpg) ![h:12em ](pics/fairmlbook.png)
+-->
 --- 
 
 # ¿Por dónde empezar? En vídeo
@@ -72,7 +79,7 @@ Javier Sánchez Monedero (Universidad de Córdoba)
 [facctconference.org/network](https://facctconference.org/network/)
 
 ---
-# Objetivo del seminario
+# Objetivos del seminario
 
 Discriminación en **sistemas/modelos** que toman decisiones trascendentales
 - Esto no considera otras formas de discriminación o injusticia
@@ -82,7 +89,7 @@ Discriminación en **sistemas/modelos** que toman decisiones trascendentales
 - Dominio del problema
 - Grupo social
 
-La presentación de [Judging the algorithm](https://arxiv.org/abs/2203.03723) dará una visión más interdisciplinar de este prolema. 
+La presentación de [Judging the algorithm](https://arxiv.org/abs/2203.03723) dará una visión más **interdisciplinar** de este problema. 
 
 ---
 # Grupos protegidos
@@ -188,33 +195,109 @@ Análisis interseccional del rendimiento en reconocimiento facial de Amazon Reko
 
 Actualizada del [NIPS 2017 Tutorial on Fairness in Machine Learning](https://fairmlbook.org/tutorial1.html)
 
+---
+# Análisis exploratorio
+
+![bg right:33% fit](pics/analisis-preliminar.jpg)
+
+- Comprobar distribución (prevalencia/prior) etiqueta de clase
+- Comprobar distribución (prevalencia/prior) etiqueta de clase por grupos
+- Comprobar: 
+  - Visual
+  - Estadística descriptiva
+  - Contraste de hipótesis
+
+Un ejemplo excelente lo podeis ver en Straw, I., & Wu, H. (2022).
+
+> Straw, I., & Wu, H. (2022). Investigating for bias in healthcare algorithms: A sex-stratified analysis of supervised machine learning models in liver disease prediction. BMJ Health & Care Informatics, 29(1), e100457. https://doi.org/10.1136/bmjhci-2021-100457
+
+<!--
+# Definición formal
+-->
 
 
+--- 
+# El "zoo" de las métricas de ecuanimidad
 
+![h:19em center](pics/zoo-fairness-metrics.png)
 
-
+> Castelnovo, A., Crupi, R., Greco, G. et al. A clarification of the nuances in the fairness metrics landscape. Sci Rep 12, 4209 (2022). https://doi.org/10.1038/s41598-022-07939-1
 
 
 ---
-# Caso: Estimación de fallo hepático
+<!-- _backgroundColor: "darkgreen" -->
+<!-- _color: "cornsilk" -->
+# A3. Caso test médico
+
+* Supongamos test genérico (con o sin técnicas estadísticas) de diagnóstico de una enfermedad. ¿Qué errores debemos minimizar?
+* Respecto a la clase: ¿qué metricas nos interesan? 
+* ¿Y si el test requiere otra prueba invasiva y/o costosa?
+* ¿Y si vamos a priorizar por riesgo de muerte a corto plazo?
 
 
 ---
-# Recap: Fuentes de sesgo
+<!-- _backgroundColor: "darkgreen" -->
+<!-- _color: "cornsilk" -->
+# A4. ¿Cómo podemos mitigar?
 
-![h:18em center](pics/how_unfairness_happen.jpg)
-
-> Fuente Luke Vilain.
-
-
+* Ya tenemos una medida del sesgo estadístico
+* ¿Cómo podríamos mitigar?
 
 ---
-# Taxonomía, métricas y problemas
+# Técnicas de mitigación de sesgos
 
-Taxonomía simplificada fairness metrics: 
-https://textbook.coleridgeinitiative.org/chap-bias.html#dealing-with-bias 
+![](pics/bias-datadriven-survey.png)
+
+> Fuente Ntoutsi, E., Fafalios, P., Gadiraju, U., Iosifidis, V., Nejdl, W., Vidal, M.-E., … Staab, S. (2020). Bias in data-driven artificial intelligence systems—An introductory survey. WIREs Data Mining and Knowledge Discovery, 10(3), e1356. https://doi.org/10.1002/widm.1356
+
+---
+# Caso detección paciente hepático: ILPD
+
+![h:15em center](pics/straw2022-table2.png)
 
 
+"*Across all classifiers females suffer from a higher false negative rate (FNR), while males suffer from a higher false positive rate*"
+
+> Straw I, Wu H. BMJ Health Care Inform 2022;29:e100457. doi:10.1136/bmjhci-2021-100457
+
+---
+# Caso detección paciente hepático: ILPD
+
+![h:15em center](pics/straw2022-table5.png)
+
+
+"*mixed results: the accuracy disparity benefits females across all classifiers, whereas the ROC_AUC disparity demonstrates a benefit for males in three out of four classifiers ... for all classifiers the FNR is consistently higher for females*"
+
+> Straw I, Wu H. BMJ Health Care Inform 2022;29:e100457. doi:10.1136/bmjhci-2021-100457
+> 
+
+---
+# Herramientas ML para mitigación y explicabilidad
+
+![w:400px](pics/fairlearn_logo.svg)
+https://fairlearn.org/
+
+Otras: 
+
+https://ai-fairness-360.org/
+
+https://pair-code.github.io/what-if-tool/
+
+---
+# Cuaderno Jupyter con FairLearn e ILPD
+
+https://github.com/javism/seminariofate2022
+
+<!--
+---
+# Heurísticas para cuantificar el sesgo: 
+
+![](pics/fairness_tree.png)
+
+
+> Fuente https://textbook.coleridgeinitiative.org/chap-bias.html#dealing-with-bias 
+
+-->
 ---
 <!-- _backgroundColor: "#123" -->
 <!-- _color: "#fff" -->
@@ -225,7 +308,61 @@ https://textbook.coleridgeinitiative.org/chap-bias.html#dealing-with-bias
 A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case study on the risk assessment tool for gender-based violence implemented in the Basque country. https://arxiv.org/abs/2203.03723
 
 ---
+<!-- _backgroundColor: "#123" -->
+<!-- _color: "#fff" -->
+##### <!--fit--> Resumen y Conclusiones 
+
+
+---
+# Recap: Fuentes de sesgo
+
+![h:18em center](pics/how_unfairness_happen.jpg)
+
+> Fuente Luke Vilain.
+
+---
+# Resumen
+
+* El paso de prototipos de investigación a aplicaciones reales de la inteligencia artificial ha motivado la aparición de muchas áreas
+* No solo FATE: IA robusta, privacidad en IA (aprendizaje federado, cifrado homeomórfico...), interacción persona-máquina (HCI)...
+* Áreas implicadas según contexto: ética, derecho, política...
+* Regulaciones (IA Act, GDPR, Ley Rider, AESIA...) y estándares (IEEE,ISO)
+* **¡¡Sistemas sociotécnicos!!**
+
+---
+# Oportunidades de aprendizaje e investigación
+
+* Revisitar problemas desde otros puntos de vista
+* Mejorar entendimiento de la inteligencia artificial y la estadística
+* Trabajar con equipos interdisciplinares y diversos
+* Trabajar con colectivos
+  
+
+---
+# Trabajos relacionados de AYRNA
+
+## Explorar límites de precisión vs ecuanimidad
+
+Valdivia, A., Sánchez‐Monedero, J., & Casillas, J. (2021). How fair can we go in machine learning? Assessing the boundaries of accuracy and fairness. *International Journal of Intelligent Systems*, 36(4), 1619–1643. https://doi.org/10.1002/int.22354
+
+
+## Índice GEMA como alternativa al MELD/MELD-na
+M. Rodriguez-Perálvarez et. al (2022), Development and validation of the Gender-Equity Model for liver Allocation (GEMA) to prioritize liver transplant candidates: a cohort study. *Acceptado*. http://gema-transplant.com
+
+---
+# Trabajos en la UCO
+
+## Desarrollo Ley Rider
+
+Guía práctica y herramienta sobre la obligación empresarial de información sobre el uso de algoritmos en el ámbito laboral. *Ministerio de Trabajo y Economía Social. Gobierno de España*. 2022. https://prensa.mites.gob.es/WebPrensa/noticias/laboral/detalle/4125
+
+## Proyecto AlgoRace
+
+Proyecto AlgoRace. Investigación sobre discriminación racial e inteligencia artificial. 2021-2023. https://algorace.org/
+
+---
 # Referencias
 
+(Lista Incompleta)
 - Solon Barocas and Moritz Hardt and Arvind Narayanan (2019). *Fairness and Machine Learning: Limitations and Opportunities*. http://www.fairmlbook.org
 - Moritz Hardt (2020). *Fairness and Machine Learning* ([Part 1](https://www.youtube.com/watch?v=Igq_S_7IfOU), [Part 2](https://www.youtube.com/watch?v=9oNVFQ9llPc)) (MLSS 2020)
