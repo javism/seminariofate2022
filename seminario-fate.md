@@ -24,8 +24,9 @@ blockquote {
 # Equidad, Rendición de Cuentas, y Transparencia en el Aprendizaje Automático para el caso la discriminación de género
 ### Introducción a los Modelos Computacionales. Grado en Ingeniería Informática. Universidad de Córdoba. 2022-2023
 
-Ana Valdivia García (Oxford University)
 Javier Sánchez Monedero (Universidad de Córdoba)
+Ana Valdivia García (Oxford University)
+
 
 --- 
 
