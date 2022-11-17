@@ -32,11 +32,11 @@ Javier Sánchez Monedero (Universidad de Córdoba)
 ![bg right fit](pics/Superior_Gort_Judge.jpg)
 
 # Objetivos
-## Parte I
-- Introducción y motivación a FATE en IA
-- Cuantificando y mitigando sesgos. [FairLearn](https://fairlearn.org/)
-## Parte II
-- Auditando a un algoritmo interdisciplinarmente.
+## Parte I (Javier Sánchez)
+- Introducción y motivación a FATE en inteligencia artificial
+- Cuantificando y mitigando sesgos: [FairLearn](https://fairlearn.org/)
+## Parte II (Ana Valdivia)
+- Analizando a un algoritmo interdisciplinarmente: [Judging the algorithm](https://arxiv.org/abs/2203.03723)
 
 
 ---
@@ -94,9 +94,17 @@ La presentación de [Judging the algorithm](https://arxiv.org/abs/2203.03723) da
 ---
 # Grupos protegidos
 
+![bg right:40%](pics/Angela-Davis-copy.webp)
+
 Clases protegidas (no en todos los contextos): 
 - EEUU: “raza”, color, sexo, religión, ciudadanía, embarazo...
 - España: género, ley igualdad de trato, embarazo, ley igualdad de trato “raza”, embarazo...
+
+La definición de grupos protegidos va más allá e incluye las categorías [no binarias](https://www.genderbread.org/) y la [interseccionalidad](https://es.wikipedia.org/wiki/Interseccionalidad)
+
+> [There’s No Scientific Basis for Race—It’s a Made-Up Label](https://www.nationalgeographic.com/magazine/2018/04/race-genetics-science-africa). National Geographic. 2018, March 12. 
+
+
 
 <!--
 Con el "pero" de lo difícil de expresar la pertenencia a grupo, es interesante [intersectionalityscore.com](https://intersectionalityscore.com/)
@@ -240,6 +248,8 @@ Un ejemplo excelente lo podeis ver en Straw, I., & Wu, H. (2022).
 <!-- _color: "cornsilk" -->
 # A4. ¿Cómo podemos mitigar?
 
+![bg right fit](pics/proxies.jpg)
+
 * Ya tenemos una medida del sesgo estadístico
 * ¿Cómo podríamos mitigar?
 * Pero antes: **¿tiene sentido una intervención estadística/algorítmica?**
@@ -287,7 +297,10 @@ https://pair-code.github.io/what-if-tool/
 ---
 # Cuaderno Jupyter con FairLearn e ILPD
 
-https://github.com/javism/seminariofate2022
+- Reproducción de los experimentos de Straw I, Wu H. BMJ Health Care Inform 2022
+- Base de datos Indian Liver Patient Dataset (ILPD)
+  
+https://github.com/javism/seminariofate2022/blob/master/IndianLiverPatientDataset-seminar.ipynb
 
 <!--
 ---
@@ -355,7 +368,7 @@ Valdivia, A., Sánchez‐Monedero, J., & Casillas, J. (2021). How fair can we go
 El grupo AYRNA en colaboración con el IMIBIC y otros centros trabaja en alternativas al MELD que no discriminen por género como estimador de riesgo de mortalidad en trasplantes hepáticos. 
 
 ---
-# Trabajos en la UCO
+# Trabajos relacionados de AYRNA
 
 ## Desarrollo Ley Rider
 
