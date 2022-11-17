@@ -320,7 +320,11 @@ https://github.com/javism/seminariofate2022/blob/master/IndianLiverPatientDatase
 
 ---
 
-A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case study on the risk assessment tool for gender-based violence implemented in the Basque country. https://arxiv.org/abs/2203.03723
+![w:700px center](pics/Judging_the_Algorithm_EPVR_UCO_20221115.png)
+
+## Enlace a la segunda parte [Judging the algorithm (PDF)](https://github.com/javism/seminariofate2022/raw/master/judging_the_algorithm_EPVR.pdf) 
+
+> A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case study on the risk assessment tool for gender-based violence implemented in the Basque country. https://arxiv.org/abs/2203.03723
 
 ---
 <!-- _backgroundColor: "#123" -->
@@ -414,3 +418,4 @@ Proyecto AlgoRace. Investigación sobre discriminación racial e inteligencia ar
 
 - Ntoutsi, E., Fafalios, P., Gadiraju, U., Iosifidis, V., Nejdl, W., Vidal, M.-E., … Staab, S. (2020). Bias in data-driven artificial intelligence systems—An introductory survey. WIREs Data Mining and Knowledge Discovery, 10(3), e1356. https://doi.org/10.1002/widm.1356
 
+- A. Valdivia, C. Hyde-Vaamonde, J. García-Marcos. Judging the algorithm: A case study on the risk assessment tool for gender-based violence implemented in the Basque country. https://arxiv.org/abs/2203.03723
